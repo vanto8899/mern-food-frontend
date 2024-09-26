@@ -32,6 +32,8 @@ export const useGetMyRestaurant = () => {
   return { restaurant, isLoading };
 };
 
+////////////////////////////
+
 export const useCreateMyRestaurant = () => {
   const { getAccessTokenSilently } = useAuth0();
 
@@ -72,6 +74,8 @@ export const useCreateMyRestaurant = () => {
 
   return { createRestaurant, isLoading };
 };
+
+////////////////////////////
 
 export const useUpdateMyRestaurant = () => {
   const { getAccessTokenSilently } = useAuth0();
@@ -114,6 +118,8 @@ export const useUpdateMyRestaurant = () => {
   return { updateRestaurant, isLoading };
 };
 
+////////////////////////////
+
 export const useGetMyRestaurantOrders = () => {
   const { getAccessTokenSilently } = useAuth0();
 
@@ -146,6 +152,8 @@ type UpdateOrderStatusRequest = {
   orderId: string;
   status: string;
 };
+
+////////////////////////////
 
 export const useUpdateMyRestaurantOrder = () => {
   const { getAccessTokenSilently } = useAuth0();
